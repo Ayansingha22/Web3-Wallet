@@ -1,8 +1,2 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Web3 Wallet
+This is a Web3 based Cryptocurrency Wallet for Solana and Ethereum. It uses libraries like React, bip-39, @solana, ethers. etc. It can be used to generate multiple public and private keys (key pair) from a master key pair to enhance privacy and security. This is also known Heirarchical-Deterministic (HD) Wallet. 
