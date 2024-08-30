@@ -7,7 +7,6 @@ import nacl from "tweetnacl"
 export function SolanaWallet({ mnemonic }) {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [publicKeys, setPublicKeys] = useState([]);
-    const [privateKeys, setPrivateKeys] = useState([]);
     return <div>
         <button onClick={function() {
             const seed = mnemonicToSeed(mnemonic);
@@ -17,15 +16,11 @@ export function SolanaWallet({ mnemonic }) {
             const keypair = Keypair.fromSecretKey(secret);
             setCurrentIndex(currentIndex + 1);
             setPublicKeys([...publicKeys, keypair.publicKey]);
-            setPrivateKeys([...privateKeys, keypair.privateKey]);
         }}>
-            Add wallet
+            Add Solana Wallet
         </button>
         {publicKeys.map(p => <div>
             {p.toBase58()}
         </div>)}
-        {/* {privateKeys.map(q => <div>
-            {q.toBase58()}
-        </div>)} */}
     </div>
 }
